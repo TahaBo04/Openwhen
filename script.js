@@ -6,12 +6,12 @@ const LETTERS = {
   miss: {
     title: "Open when you miss me",
     text: `My Soumaya
-I know you miss me right now. Close your eyes for a second and breathe with me. Think about our walks near the sea in Rabat and the way your hand feels in mine. I am building a life that fits your smile. I am proud of you. I am grateful for you. I am here.`
+I know you miss me right now. Close your eyes for a second and breathe with me. Think about our walks near the sea , and the way your hand felt in mine, merging together like they were meant to be stuck eternally , which they were . I am building a life that fits your smile, and throughout that I always will be proud of you and grateful for you. And remember 7bibti I am always here.`
   },
   sad: {
     title: "Open when you are sad",
     text: `My love
-If tears are heavy let them fall. I will collect every one and trade them for tiny moments of joy. Remember how strong you are. Remember how gentle you are. Your heart is a home and I am blessed to live in it. I will always choose you.`
+If tears are heavy let them fall. I will collect every one and trade them for tiny moments of joy. Remember how strong you are , how strong we are , but also remember how gentle you are so be gentle on yourself as well baby . Your heart is a home and I am blessed to live in it , so don't let anything break it because they'll be breaking my safe space . I will always choose you and be there for you my baby and any negativity I am here to fix it just communicate it my love.`
   },
   smile: {
     title: "Open when you want to smile",
@@ -21,7 +21,7 @@ Think about the first time you made me laugh so hard I forgot every worry. Think
   sleep: {
     title: "Open when you cannot sleep",
     text: `Close your eyes my star
-Count the waves on the Rabat shore. One wave says I love you. The next says I am here. The next says forever. I will hold you in every dream. Rest now. I am watching the same sky and thinking of you.`
+Imagine us sitting together in our sea spot and count the waves on the shore baby. One wave says I love you. The next says I am here. The next says forever. I will hold you in every dream. Rest now. I am watching the same sky and thinking of you and I'll always be.`
   },
   loved: {
     title: "Open when you want to feel loved",
@@ -31,7 +31,7 @@ You are my calm and my fire. You make my thoughts clear and my heart steady. You
   secret: {
     title: "My secret letter to you",
     text: `Soumaya
-Before you came I felt alone in a crowd and heavy with silence. You arrived like the right answer after a long exam. You gave me purpose and peace. I dream of a home near Rabat and a life full of tiny rituals that keep our love safe. I want four little ones who learn kindness by watching us. I want long mornings and warm evenings. I want to carry the weight for you so your steps feel light. When you doubt yourself read this line slowly. You are the best thing that ever happened to me. I promise to protect your heart with patience with loyalty with effort and with joy. I will be your home for the rest of my life.`
+Before you came I felt alone in a crowd and heavy with silence. You arrived like the right answer after a long exam. You gave me purpose and peace. I dream of a beautiful home and a perfect life full of tiny rituals that keep our love safe. I want four little ones who learn kindness by watching us. I want long mornings and warm evenings. I want to carry the weight for you so your steps feel light. When you doubt yourself read this line slowly. You are the best thing that ever happened to me. I promise to protect your heart with patience with loyalty with effort and with joy. I will be your home for the rest of my life.`
   }
 };
 
