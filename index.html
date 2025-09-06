@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open When… — For Soumaya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="heart">♥</span>
+      <span>Open When… for Soumaya</span>
+    </div>
+
+    <div class="audio-box">
+      <button id="playBtn" aria-label="Play Apocalypse">Play “Apocalypse”</button>
+      <span id="playingState" class="muted"></span>
+      <!-- Put apocalypse.mp3 in /assets/audio/ -->
+      <audio id="player" preload="none">
+        <source src="assets/audio/apocalypse.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </header>
+
+  <main class="grid">
+    <!-- Open when you miss me -->
+    <button class="envelope" data-letter="miss">
+      <span class="flap"></span><span class="seal">💌</span>
+      <span class="label">Open when you miss me</span>
+    </button>
+
+    <!-- Open when you are sad -->
+    <button class="envelope" data-letter="sad">
+      <span class="flap"></span><span class="seal">💌</span>
+      <span class="label">Open when you are sad</span>
+    </button>
+
+    <!-- Open when you want to smile -->
+    <button class="envelope" data-letter="smile">
+      <span class="flap"></span><span class="seal">💌</span>
+      <span class="label">Open when you want to smile</span>
+    </button>
+
+    <!-- Open when you cannot sleep -->
+    <button class="envelope" data-letter="sleep">
+      <span class="flap"></span><span class="seal">💌</span>
+      <span class="label">Open when you cannot sleep</span>
+    </button>
+
+    <!-- Open when you want to feel loved -->
+    <button class="envelope" data-letter="loved">
+      <span class="flap"></span><span class="seal">💌</span>
+      <span class="label">Open when you want to feel loved</span>
+    </button>
+
+    <!-- Secret envelope -->
+    <button class="envelope secret" data-letter="secret">
+      <span class="flap"></span><span class="seal">🔐</span>
+      <span class="label">Secret letter</span>
+    </button>
+  </main>
+
+  <!-- Letter Modal -->
+  <dialog id="letterModal">
+    <article>
+      <header>
+        <h2 id="letterTitle">Open When…</h2>
+        <button id="closeModal" aria-label="Close">✕</button>
+      </header>
+      <div id="letterContent" class="letter"></div>
+      <footer class="foot">
+        <button id="prevBtn" class="ghost">Previous</button>
+        <button id="nextBtn" class="ghost">Next</button>
+        <button id="markBtn">Mark as read</button>
+      </footer>
+    </article>
+  </dialog>
+
+  <!-- Secret Password Modal -->
+  <dialog id="passModal">
+    <article>
+      <header>
+        <h3>Unlock the secret letter</h3>
+      </header>
+      <p>Enter our password. Try a special date or nickname.</p>
+      <input id="passInput" type="password" placeholder="Password" />
+      <div class="row">
+        <button id="passConfirm">Unlock</button>
+        <button id="passCancel" class="ghost">Cancel</button>
+      </div>
+      <p id="passHint" class="muted small"></p>
+    </article>
+  </dialog>
+
+  <footer class="credits">
+    Made with love by Taha for Soumaya
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
