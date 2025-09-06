@@ -1,0 +1,80 @@
+:root{
+  --bg:#0f1115;
+  --card:#151924;
+  --ink:#f8f8f8;
+  --muted:#b6bfd3;
+  --accent:#78ffa9;
+  --accent-soft:rgba(120,255,169,0.15);
+  --danger:#ff6b8a;
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:radial-gradient(1200px 700px at 20% -10%, #1a2030, transparent),
+             radial-gradient(900px 600px at 120% 0%, #171b28, transparent),
+             var(--bg);
+  color:var(--ink);
+  font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  letter-spacing:.2px;
+}
+
+/* Top bar */
+.topbar{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 18px; border-bottom:1px solid #1f2533; background:#0e121a;
+  position:sticky; top:0; z-index:5;
+}
+.brand{display:flex; gap:10px; align-items:center; font-weight:700}
+.heart{color:var(--danger)}
+.audio-box{display:flex; gap:12px; align-items:center}
+button{cursor:pointer; border:0; background:var(--accent-soft); color:var(--ink); padding:10px 14px; border-radius:10px; transition:.25s transform}
+button:hover{transform:translateY(-1px)}
+button.ghost{background:transparent; border:1px solid #2c3446}
+.muted{color:var(--muted)}
+.small{font-size:.9rem}
+
+/* Envelopes grid */
+.grid{
+  display:grid; gap:18px; padding:22px; max-width:1080px; margin:24px auto;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+.envelope{
+  background:linear-gradient(145deg,#1b2131,#121623);
+  border:1px solid #2b3144; border-radius:16px; position:relative; padding:60px 16px 20px;
+  box-shadow:var(--shadow); isolation:isolate;
+}
+.envelope .flap{
+  position:absolute; inset:0 0 auto 0; height:52px; border-radius:16px 16px 0 0;
+  background:conic-gradient(from 180deg at 50% 0%, #26304b, #1a2030 38%, #10131d 62%, #26304b);
+  transform-origin:top; transform:perspective(400px) rotateX(0deg);
+  transition:transform .5s ease;
+}
+.envelope:hover .flap{transform:perspective(400px) rotateX(-18deg)}
+.envelope .seal{
+  position:absolute; top:36px; left:50%; transform:translateX(-50%);
+  filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))
+}
+.envelope .label{display:block; text-align:center; font-weight:600; margin-top:10px}
+
+/* Secret visual */
+.envelope.secret{outline:1px dashed rgba(255,255,255,.12)}
+.envelope.secret .seal{color:var(--accent)}
+
+/* Dialogs */
+dialog{border:none; padding:0; background:transparent}
+dialog::backdrop{background:rgba(0,0,0,.6); backdrop-filter:saturate(120%) blur(2px)}
+dialog article{
+  background:linear-gradient(180deg,#131826,#0e1220);
+  color:var(--ink); width:min(820px,92vw); border-radius:16px; box-shadow:var(--shadow); border:1px solid #27314b;
+}
+dialog article header{
+  display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-bottom:1px solid #242b40
+}
+dialog article .letter{padding:16px 18px; white-space:pre-wrap}
+.foot{display:flex; gap:10px; justify-content:flex-end; padding:10px 16px; border-top:1px solid #242b40}
+
+/* Footer */
+.credits{color:var(--muted); text-align:center; padding:30px}
